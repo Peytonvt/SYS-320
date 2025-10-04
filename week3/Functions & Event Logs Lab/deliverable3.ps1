@@ -11,7 +11,8 @@ if($loginouts[$i].InstanceId -eq 7001) {$event="Logon"}
 if($loginouts[$i].InstanceId -eq 7002) {$event="Logoff"}
 
 # Creating user property value
-$user = $loginouts[$i].ReplacementStrings[1]
+$sid = New-Object System.Security.Principal.SecurityIdentifier($loginouts[$i].ReplacementStrings[1])
+$user = $sid.Translate([System.Security.Principal.NTAccount]).Value
 
 # Adding each new line (in form of a custom object) to our empty array
 $loginoutsTable += [pscustomobject]@{"Time" = $loginouts[$i].TimeGenerated;

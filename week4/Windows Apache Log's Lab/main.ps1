@@ -15,3 +15,4 @@ $output = $grouped | ForEach-Object {
 }
 
 $output | Format-Table -AutoSize
+$tableRecords | Format-Table -AutoSize -Wrap 

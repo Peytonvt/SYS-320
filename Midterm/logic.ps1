@@ -1,4 +1,3 @@
-# Challenge-1: Function to scrape IOC indicators from web page
 function getIoc() {
     
     $webPage = Invoke-WebRequest -Uri "http://10.0.17.5/IOC.html" -TimeoutSec 2
@@ -24,7 +23,7 @@ function getIoc() {
 
 function getApacheLogs() {
 
-    $logPath = "C:\Users\champuser\SYS320-03\Midterm\access.log"
+    $logPath = "C:\Users\champuser\SYS-320\Midterm\access.log"
     $rawLogs = Get-Content -Path $logPath
     
     $parsedLogs = @()

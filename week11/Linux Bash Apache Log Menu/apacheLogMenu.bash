@@ -1,4 +1,4 @@
-! /bin/bash
+#!/bin/bash
 
 logFile="/var/log/apache2/access.log"
 

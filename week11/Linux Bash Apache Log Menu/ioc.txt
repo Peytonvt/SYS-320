@@ -1,0 +1,15 @@
+sql
+union
+select
+script
+<script
+alert(
+../../
+etc/passwd
+cmd.exe
+/bin/sh
+../../../
+<?php
+eval(
+base64
+phpinfo
